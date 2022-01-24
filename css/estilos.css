@@ -167,6 +167,11 @@ body{
     background-color: rgba(0, 0, 0,.8);
 }
 
+.product:hover{
+    box-shadow: 0px 0px 10px 1px #F60144;
+    transition: .3s;
+}
+
 .product_img1{
     background-image: url(../img/Motherboards.jpg);
     background-size: cover;
@@ -313,7 +318,7 @@ body{
     font-size: 1em;
     color: white;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding: 15px;
     display: block;
     border-radius: 5px;
     cursor: pointer;
@@ -566,7 +571,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: white  ;
+    background-color: white;
     padding: 40px 0px;
     cursor: pointer;
 }
@@ -927,7 +932,7 @@ footer{
 
 /* Sponsors */
 .img-sponsor{
-    width: 100%;
+    width: 14%;
 }
 
 
@@ -1152,6 +1157,12 @@ footer{
 }
 /* FIN MAIN CONTACTO */
 
+
+/* Sponsors */
+.img-sponsor{
+    width: 14%;
+}
+
 }
 
 
@@ -1267,8 +1278,8 @@ footer{
 
 .gallery_container{
     display: grid;
-    width: 80%;
-    height: 80vw;
+    width: 70%;
+    height: 50vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -1360,5 +1371,11 @@ footer{
     width: 40%;
 }
 /* FIN MAIN CONTACTO */
+
+
+/* Sponsors */
+.img-sponsor{
+    width: 8%;
+}
 
 }
