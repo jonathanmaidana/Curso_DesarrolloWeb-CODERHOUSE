@@ -1279,7 +1279,7 @@ footer{
 .gallery_container{
     display: grid;
     width: 70%;
-    height: 50vw;
+    height: 80vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
