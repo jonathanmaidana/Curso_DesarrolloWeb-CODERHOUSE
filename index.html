@@ -13,22 +13,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header_inicio">
+    <header id="header">
         <section class="main_navbar">
-            <div class="logo_header">
-                <a href="index.html">
-                    <img src="img/Logo.png" alt="logo" class="logo">
-                </a>
-            </div>
-
-            <div class="search_container">
-                <label for="search"></label>
-                <input type="search" placeholder="Buscar Productos" class="search-input">
-            </div>
-
             <nav class="navbar navbar-expand-sm navbar-light">
                 <div class="container-fluid">
-                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/Logo.png" alt="logo" class="logo">
+                        </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,19 +33,27 @@
                                 <li class="nav_link"><a href="html/contacto.html">Contacto</a></li>
                             </ul>
                         </div>
+                        <div class="icon_container_header">
+                            <a href="">
+                                <img src="img/icon-cart.png" alt="Ir al carrito" class="icon-header">
+                            </a>
+                            <a href="">
+                                <img src="img/icon-user.png" alt="Ingresar" class="icon-header">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
-
-            <div class="icon_container_header">
-                <a href="">
-                    <img src="img/icon-cart.png" alt="Ir al carrito" class="icon-header">
-                </a>
-                <a href="">
-                    <img src="img/icon-user.png" alt="Ingresar" class="icon-header">
-                </a>
-            </div>
         </section>
+        
+        <div class="title_header">
+            <h1>Gaming Zone</h1>
+            <p>Ventas de productos gamer</p>
+        </div>
+
+        <button class="scroll">
+            <h1>Bajar</h1>
+        </button>
     </header>
 
 

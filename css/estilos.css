@@ -9,28 +9,38 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* HEADER */
 
 /* Logo y nav*/
-.main_navbar{
-    background-color: black;
+#header{
+    background-color: #212121;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    flex-direction: column;
+    height: 100vh;
     width: 100%;
-    border-bottom: solid 1px;
-    border-image-source: linear-gradient(to right, #B00F4B,#ed0202af);
-    border-image-slice: 1;
+    padding-bottom: 1rem;
 }
 
-.logo_header{
-    width: 50%;
-    height: 50%;
+#header_secondary{
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #1a19198f, #2121211c);
+
+}
+
+.main_navbar{
+    display: flex;
 }
 
 .logo{
@@ -68,20 +78,6 @@ body{
     outline: none;
 }
 
-.search-input::placeholder{
-    background-image: url(../img/icon-search.png);
-    background-size: 1.2em;
-    background-repeat: no-repeat;
-    background-position: center right;
-}
-
-.navbar1{
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
 .nav_link{
     display: flex;
     width: 100%;
@@ -94,13 +90,28 @@ body{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: white;
+    color: silver;
+    position: relative;
+    font-weight: 700;
 }
 
 .nav_link a:hover{
-    color: #F60144;
-    background-color: rgba(37, 37, 37, 0.692);
-    transition: all .3s ease;
+    color: white;
+}
+
+.nav_link a::after{
+    content: "";
+    position: absolute;
+    background-color: #F60144;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav_link a:hover::after{
+    width: 100%;
 }
 
 .icon_container_header{
@@ -115,15 +126,57 @@ body{
     background-color: #F60144;
     transition: .3s ease-in-out;
 }
+
+.title_header{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.title_header h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.title_header p{
+    font-size: 1.2rem;
+}
+
+.scroll{
+    border-radius: 3rem;
+    height: 3rem;
+    width: 10rem;
+    background-color: #F60144;;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+
+.scroll h1{
+    font-size: 1rem;
+    color: silver;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scroll h1:hover{
+    color: white;
+}
 /* Fin logo y nav */
 
 
 
 /* MAIN INICIO */
 #main_inicio{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -135,7 +188,7 @@ body{
     color: white;
     width: 100%;
     text-align: center;
-    margin: 50px;
+    margin: 50px
 }
 
 .productos_destacados{
@@ -176,7 +229,6 @@ body{
     background-image: url(../img/Motherboards.jpg);
     background-size: cover;
     cursor: pointer;
-    margin: 10px;
 }
 
 .product_img2{
@@ -184,14 +236,12 @@ body{
     background-color: white;
     background-size: cover;
     cursor: pointer;
-    margin: 10px;
 }
 
 .product_img3{
     background-image: url(../img/PlacadeVideo2.jpg);
     background-size: cover;
     cursor: pointer;
-    margin: 10px;
 }
 
 .hr1{
@@ -209,7 +259,6 @@ body{
     align-items: center;
     text-align: center;
     color: white;
-    padding: 20px 0px;
     width: 100%;
 }
 
@@ -276,12 +325,6 @@ body{
 
 
 /* MAIN PRODUCTOS */
-#main_productos{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 .main_menu_products{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -370,12 +413,6 @@ body{
 
 
 /* MAIN GALERIA */
-#main_galeria{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 .gallery_title{
     font-size: 1.9em;
     color: white;
@@ -385,7 +422,6 @@ body{
 
 .gallery_container{
     margin-bottom: 100px;
-    display: grid;
 }
 
 .gallery_container img{
@@ -398,9 +434,6 @@ body{
 
 /* MAIN NOSOTROS */
 #main_nosotros{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -474,9 +507,6 @@ body{
 
 /* MAIN CONTACTO */
 #main_contacto{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -730,8 +760,18 @@ footer{
 @media only screen and  (max-width: 576px){
 
 /* Logo y nav */
+#header{
+    flex-direction: column;
+}
+
 .main_navbar{
     flex-direction: column;
+    width: 100%;
+}
+
+.logo{
+    width: 200px;
+    height: 50%;
 }
 
 .search_container{
@@ -740,20 +780,10 @@ footer{
     padding: 20px;
 }
 
-.navbar_container{
-    width: 100%;
-    height: 100%;
-}
-
-.navbar{
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-
 .nav_link a{
     font-size: 1.2em;
-    padding: 20px;
+    padding: 5px 0;
+    margin: 10px 0;
 }
 
 .icon_container_header{
@@ -769,6 +799,10 @@ footer{
     height: 100%;
     justify-content: space-around;
     align-items: center;
+}
+
+.title_header h1{
+    font-size: 3rem;
 }
 /* Fin logo y nav */
 
@@ -789,21 +823,25 @@ footer{
 
 .product{
     width: 60%;
+    height: auto;
 }
 
 .product_img1{
-    width: 40vw;
-    height: 40vw;
+    width: 100%;
+    height: 60vw;
+    background-position: center;
 }
 
 .product_img2{
-    width: 40vw;
-    height: 40vw;
+    width: 100%;
+    height: 60vw;
+    background-position: center;
 }
 
 .product_img3{
-    width: 40vw;
-    height: 40vw;
+    width: 100%;
+    height: 60vw;
+    background-position: center;
 }
 /* FIN MAIN INICIO */
 
@@ -959,14 +997,12 @@ footer{
 @media only screen and (min-width: 576px){
 
 /* Logo y nav */
-#header_inicio{
-    width: 100%;
-    height: 100%;
-}
-
 .main_navbar{
     flex-direction: column;
-    align-items: center;
+}
+
+.logo{
+    width: 200px;
 }
 
 .search_container{
@@ -975,21 +1011,9 @@ footer{
     padding: 20px;
 }
 
-
-.navbar_container{
-    width: 100%;
-    height: 100%;
-}
-
-.navbar{
-    width: 100%;
-    height: 100%;
-}
-
 .nav_link a{
-    font-size: 1.2em;
-    padding: 30px 10px;
-    margin: 20px 0px;
+    font-size: 1em;
+    margin: 0px 10px;
 }
 
 .icon_container_header{
@@ -1179,8 +1203,8 @@ footer{
 @media only screen and (min-width: 992px){
 
 /* Logo y nav */    
-#header_inicio{
-    height: 100%;
+#header{
+    height: 100vh;
     width: 100%;
 }
 
@@ -1201,16 +1225,9 @@ footer{
     margin: 0px 20px;
 }
 
-.navbar1{
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
 .nav_link a{
-    font-size: 1.2em;
-    padding: 50px 5px;
+    font-size: 1em;
+    padding: 0px 10px;
     margin: 0px 10px;
 }
 
@@ -1232,6 +1249,10 @@ footer{
     flex-direction: column;
 }
 
+.title_inicio{
+    font-size: 2.5rem;
+}
+
 .products_container{
     flex-direction: row;
     align-items: center;
@@ -1249,18 +1270,24 @@ footer{
 }
 
 .product_img1{
-    width: 80%;
-    height: 15vw;
+    width: 100%;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .product_img2{
-    width: 80%;
-    height: 15vw;
+    width: 100%;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .product_img3{
-    width: 80%;
-    height: 15vw;
+    width: 100%;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
 }
 /* FIN MAIN INICIO */
 
@@ -1281,6 +1308,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
 
 .gallery_container{
     display: grid;
@@ -1337,6 +1365,7 @@ footer{
     width: 100%;
     height: 100%;
 }
+
 /* FIN MAIN GALERIA */
 
 
