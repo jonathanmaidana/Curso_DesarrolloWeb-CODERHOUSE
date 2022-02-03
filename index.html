@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- iconos -->
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header id="header">
-        <section class="main_navbar">
-            <nav class="navbar navbar-expand-sm navbar-light">
+    <header>
+        <section class="navbar_main">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                         <a class="navbar-brand" href="index.html">
-                            <img src="img/Logo.png" alt="logo" class="logo">
+                            <img src="img/Logo.png" alt="logo" class="navbar_logo">
                         </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,19 +29,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="navbar_container">
                             <ul class="navbar-nav">
-                                <li class="nav_link"><a class="active" aria-current="page" href="index.html">Inicio</a></li>
-                                <li class="nav_link"><a href="html/productos.html">Productos</a></li>
-                                <li class="nav_link"><a href="html/galeria.html">Galeria</a></li>
-                                <li class="nav_link"><a href="html/nosotros.html">Nosotros</a></li>
-                                <li class="nav_link"><a href="html/contacto.html">Contacto</a></li>
+                                <li class="navbar_link"><a class="active" aria-current="page" href="index.html">Inicio</a></li>
+                                <li class="navbar_link"><a href="html/productos.html">Productos</a></li>
+                                <li class="navbar_link"><a href="html/galeria.html">Galeria</a></li>
+                                <li class="navbar_link"><a href="html/nosotros.html">Nosotros</a></li>
+                                <li class="navbar_link"><a href="html/contacto.html">Contacto</a></li>
                             </ul>
                         </div>
-                        <div class="icon_container_header">
+                        <div class="navbar_container_icon">
                             <a href="">
-                                <img src="img/icon-cart.png" alt="Ir al carrito" class="icon-header">
+                                <img src="img/icon-cart.png" alt="Ir al carrito" class="navbar-icon">
                             </a>
                             <a href="">
-                                <img src="img/icon-user.png" alt="Ingresar" class="icon-header">
+                                <img src="img/icon-user.png" alt="Ingresar" class="navbar-icon">
                             </a>
                         </div>
                     </div>
@@ -46,12 +49,12 @@
             </nav>
         </section>
         
-        <div class="title_header">
+        <div class="header_title">
             <h1>Gaming Zone</h1>
             <p>Ventas de productos gamer</p>
         </div>
 
-        <button class="scroll">
+        <button class="header_button_down animate__animated animate__shakeY">
             <h1>Bajar</h1>
         </button>
     </header>
@@ -59,9 +62,8 @@
 
 
     <main id="main_inicio">
-        <h2 class="title_inicio">Productos Destacados</h2>
-        <div class="productos_destacados">
-
+        <h2 class="inicio_title">Productos Destacados</h2>
+        
             <section class="products_container">
 
                 <div class="product">
@@ -72,12 +74,12 @@
                     <div class="product_description">
                         <h3 class="product_title">Rog Strix Asus B550-f</h3>
                         <span class="product_price">$ 35.399
-                            <div class="icon-truck">
-                                <i class="fas fa-truck"title="Envio Gratis"></i>                    
+                            <div class="product_icon_truck">
+                                <i class="fas fa-truck" title="Envio Gratis"></i>                    
                             </div>
                         </span>
-                        <button class="buy_btn">
-                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy"></i>
+                        <button class="product_buy_btn">
+                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy-btn"></i>
                         </button>
                     </div>
                 </div>
@@ -90,12 +92,12 @@
                     <div class="product_description">
                         <h3 class="product_title">AMD Ryzen 5 5600G</h3>
                         <span class="product_price">$38.399
-                            <div class="icon-truck">
+                            <div class="product_icon_truck">
                                 <i class="fas fa-truck" title="Envio Gratis"></i>                    
                             </div>
                         </span>
-                        <button class="buy_btn">
-                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy"></i>
+                        <button class="product_buy_btn">
+                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy-btn"></i>
                         </button>
                     </div>
                 </div>
@@ -108,24 +110,23 @@
                     <div class="product_description">
                         <h3 class="product_title">ASUS GeForce GTX 1660 SUPER</h3>
                         <span class="product_price">$ 175,749.00
-                            <div class="icon-truck">
+                            <div class="product_icon_truck">
                                 <i class="fas fa-truck" title="Envio Gratis"></i>                    
                             </div>
                         </span>
-                        <button class="buy_btn">
-                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy"></i>
+                        <button class="product_buy_btn">
+                            <i><img src="img/buy-icon.png" alt="Agregar al Carrito" class="icon-buy-btn"></i>
                         </button>
                     </div>
                 </div>
             </section>
-        </div>
 
         <div class="sponsor_carusel">
             <div class="sponsors_container">
-                <img src="img/hyper-x-logo.png" alt="HyperX" class="img-sponsor">
-                <img src="img/kingston-logo.png" alt="Kingston" class="img-sponsor">
-                <img src="img/asus-logo.png" alt="ASUS" class="img-sponsor">
-                <img src="img/amd-logo.png" alt="AMD" class="img-sponsor">
+                <img src="img/hyper-x-logo.png" alt="HyperX" class="sponsor-img">
+                <img src="img/kingston-logo.png" alt="Kingston" class="sponsor-img">
+                <img src="img/asus-logo.png" alt="ASUS" class="sponsor-img">
+                <img src="img/amd-logo.png" alt="AMD" class="sponsor-img">
             </div>
         </div>
     </main>
@@ -133,59 +134,58 @@
 
 
     <footer>
-        <section id="footer_container"> 
-            <div class="footer_box">    
-                <div class="info_container">
-                    <p class="info-title">NOSOTROS<p>
+        <section id="footer_container">   
+            <div class="footer_about">
+                <p class="footer_about_title">NOSOTROS<p>
 
-                    <ul class="info_nav">
-                        <li class="info-item">
-                            <i class="fa fa-phone"></i>
-                            XXXX-XXXX
-                        </li>
+                <ul class="footer_about_nav">
+                    <li class="about_item">
+                        <i class="fa fa-phone"></i>
+                        XXXX-XXXX
+                    </li>
 
-                        <li class="info-item">
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
-                                <i class="fab fa-whatsapp"></i>
-                                WhatsApp: XXXXXXXX</a>
-                        </li>
+                    <li class="about_item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp: XXXXXXXX</a>
+                    </li>
 
-                        <li class="info-item">
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
-                                <i class="fa fa-at"></i>
-                                Email: @gmail.com</a>
-                        </li>
+                    <li class="about_item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <i class="fa fa-at"></i>
+                            Email: @gmail.com</a>
+                    </li>
 
-                        <li class="info-item">
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
-                                <i class="fa fa-map-marker-alt"></i>
-                                Ubicacion:</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="about_item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <i class="fa fa-map-marker-alt"></i>
+                            Ubicacion:</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="social_container">
+                <p class="social_title">REDES</p>
                 
-                <div class="social_media">
-                    <p class="title-socials">REDES</p>
-                    <ul class="social_container">
-                        <li class="social-icon">
-                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/twitter.png" alt="Ir a Twitter">
-                            </a>
-                        </li>
+                <ul class="social_container_icon">
+                    <li class="social-icon">
+                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/twitter.png" alt="Ir a Twitter">
+                        </a>
+                    </li>
 
-                        <li class="social-icon">
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="img/facebook.png" alt="Ir a Facebook">
-                            </a>   
-                        </li>
+                    <li class="social-icon">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/facebook.png" alt="Ir a Facebook">
+                        </a>   
+                    </li>
 
-                        <li class="social-icon">
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/instagram.png" alt="Ir a Instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="social-icon">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram.png" alt="Ir a Instagram">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section> 
         <hr class="hr2">
