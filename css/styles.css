@@ -775,6 +775,9 @@ footer {
         height: 100%;
         justify-content: center;
         padding: 20px; }
+      .navbar_main .navbar_container_icon .navbar-icon {
+        width: 20px;
+        height: 20px; }
   /* Fin logo y nav */
   /* MAIN INICIO */
   #main_inicio {
@@ -997,7 +1000,7 @@ footer {
   #main_contacto {
     flex-direction: column; }
     #main_contacto .form_container {
-      width: 250px; }
+      width: 40%; }
   /* FIN MAIN CONTACTO */
   /* Sponsors */
   .sponsor-img {

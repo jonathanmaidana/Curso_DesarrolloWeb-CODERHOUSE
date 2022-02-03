@@ -1138,6 +1138,11 @@ header{
             justify-content: center;
             padding: 20px;
         }
+
+        .navbar-icon{
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 /* Fin logo y nav */
@@ -1509,7 +1514,7 @@ header{
     flex-direction: column;
 
     .form_container{
-        width: 250px;
+        width: 40%;
     }
 }
 /* FIN MAIN CONTACTO */
