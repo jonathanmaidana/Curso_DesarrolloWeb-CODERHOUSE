@@ -3,3 +3,14 @@
 $color-red-light:#F60144;
 $color-white: #ffffff;
 $color-silver: #c0c0c0;
+
+
+
+/*MIXIN*/ 
+
+@mixin posicion($display, $jContent, $aItems, $fDirection) {
+    display: $display;
+    justify-content: $jContent;
+    align-items: $aItems;
+    flex-direction: $fDirection;
+}

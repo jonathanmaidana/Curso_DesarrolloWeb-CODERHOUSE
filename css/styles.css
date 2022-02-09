@@ -6,6 +6,7 @@
   font: inherit; }
 
 /*VARIABLES*/
+/*MIXIN*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: url(../img/fondo.jpg);
@@ -19,8 +20,8 @@ body {
 header {
   background-color: #212121;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   height: 100vh;
   width: 100%;
@@ -29,6 +30,8 @@ header {
     width: 100%;
     display: flex;
     justify-content: center; }
+    header .navbar_main .navbar {
+      padding: 0; }
   header .navbar_container .navbar_link {
     display: flex;
     width: 100%;
@@ -65,8 +68,8 @@ header {
   header .header_title {
     height: 60vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     color: #ffffff; }
     header .header_title h1 {
@@ -81,8 +84,9 @@ header {
     background-color: #F60144;
     border: none;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-direction: none; }
     header .header_button_down:hover {
       background-color: black;
       transition: 0.3s; }
@@ -98,8 +102,9 @@ header {
 
 #header_secondary {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: none;
   width: 100%;
   height: auto;
   background: linear-gradient(to bottom, #1a19198f, #2121211c); }
@@ -140,39 +145,6 @@ header {
     #header_secondary .navbar_container_icon a:hover {
       background-color: #F60144;
       transition: .3s ease-in-out; }
-  #header_secondary .header_title {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #ffffff; }
-    #header_secondary .header_title h1 {
-      font-weight: 700;
-      font-size: 3.5rem; }
-    #header_secondary .header_title p {
-      font-size: 1.2rem; }
-  #header_secondary .header_button_down {
-    border-radius: 3rem;
-    height: 3rem;
-    width: 10rem;
-    background-color: #F60144;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    #header_secondary .header_button_down:hover {
-      background-color: black;
-      transition: 0.3s; }
-    #header_secondary .header_button_down h1 {
-      font-size: 1rem;
-      color: #c0c0c0;
-      font-weight: bold;
-      text-align: center; }
-    #header_secondary .header_button_down h1:hover {
-      color: #ffffff; }
-    #header_secondary .header_button_down h1 {
-      margin: 0; }
 
 /* Fin logo y nav */
 /* MAIN INICIO */
@@ -192,8 +164,8 @@ header {
 
 .products_container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -204,7 +176,7 @@ header {
     align-items: center;
     margin: 20px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: black; }
     .products_container .product:hover {
       box-shadow: 0px 0px 10px 1px #F60144;
       transition: .3s; }
@@ -221,7 +193,7 @@ header {
       background-image: url(../img/PlacadeVideo2.jpg);
       background-size: cover;
       cursor: pointer; }
-    .products_container .product .hr1 {
+    .products_container .product .hr1, .products_container .product footer .hr2, footer .products_container .product .hr2 {
       width: 100%;
       border: 0;
       height: 0;
@@ -229,9 +201,9 @@ header {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
     .products_container .product_description {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       text-align: center;
       color: #ffffff;
       width: 100%; }
@@ -290,7 +262,7 @@ header {
     color: #ffffff;
     display: block;
     height: 40px;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #ffffff;
     font-size: 1.3em; }
 
 .down_arrow {
@@ -482,19 +454,19 @@ header {
   height: 100%;
   display: flex;
   background-color: #ffffff;
-  padding: 40px 0px;
-  cursor: pointer; }
+  padding: 40px 0px; }
   .sponsor_carusel .sponsors_container {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row; }
     .sponsor_carusel .sponsors_container .sponsor-img {
       margin: 0px 15px;
       transition: all .3s;
       filter: grayscale(1);
-      opacity: .5; }
+      opacity: .5;
+      cursor: pointer; }
     .sponsor_carusel .sponsors_container .sponsor-img:hover {
       filter: none;
       opacity: 1;
@@ -562,8 +534,8 @@ footer {
         list-style: none;
         display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
         align-items: center;
+        flex-direction: row;
         margin: 40px 0px;
         padding: 0; }
         footer #footer_container .social_container_icon .social-icon {
@@ -576,11 +548,8 @@ footer {
           opacity: 1;
           transition: .3s; }
   footer .hr2 {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 0px 20px; }
+    margin: 0px 20px;
+    width: auto; }
   footer .footer_end p {
     font-size: 1rem;
     color: #ffffff;
@@ -653,7 +622,7 @@ footer {
         width: 60%;
         height: auto;
         flex-direction: column; }
-        #main_inicio .products_container .product_img1 {
+        #main_inicio .products_container .product .product_img1 {
           width: 100%;
           height: 60vw;
           background-position: center; }
@@ -793,14 +762,17 @@ footer {
         height: 100%; }
         #main_inicio .products_container .product_img1 {
           width: 100%;
-          height: 45vw; }
+          height: 45vw;
+          background-size: cover; }
         #main_inicio .products_container .product_img2 {
           width: 100%;
-          height: 45vw; }
+          height: 45vw;
+          background-size: cover; }
         #main_inicio .products_container .product_img3 {
           width: 100%;
-          height: 45vw; }
-      #main_inicio .products_container .hr1 {
+          height: 45vw;
+          background-size: cover; }
+      #main_inicio .products_container .hr1, #main_inicio .products_container footer .hr2, footer #main_inicio .products_container .hr2 {
         display: none; }
       #main_inicio .products_container .product_description {
         width: 100%;
@@ -930,7 +902,7 @@ footer {
           height: 20vw;
           background-size: cover;
           background-position: center; }
-      #main_inicio .products_container .hr1 {
+      #main_inicio .products_container .hr1, #main_inicio .products_container footer .hr2, footer #main_inicio .products_container .hr2 {
         display: block; }
   /* FIN MAIN INICIO */
   /* MAIN PRODUCTOS */
