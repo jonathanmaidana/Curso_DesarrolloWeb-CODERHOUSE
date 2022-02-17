@@ -35,23 +35,8 @@
             transition: .3s;
         }
         
-        &_img1{
-            background-image: url(../img/Motherboards.jpg);
-            background-size: cover;
-            cursor: pointer;
-        }
-        
-        &_img2{
-            background-image: url(../img/Microprocesador1.png);
-            background-color: $color-white;
-            background-size: cover;
-            cursor: pointer;
-        }
-        
-        &_img3{
-            background-image: url(../img/PlacadeVideo2.jpg);
-            background-size: cover;
-            cursor: pointer;
+        &_img img{
+            max-width: 100%
         }
 
         .hr1{
@@ -131,90 +116,115 @@
 
 
 /* MAIN PRODUCTOS */
-.main_menu_products{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-
-    .title_menu_products{
-        color: $color-white;
-        display: block;
-        height: 40px;
-        border-bottom: solid 1px $color-white;
-        font-size: 1.3em;
+    .col-md-9{
+        padding: 0px 60px;
     }
-}
 
-.down_arrow{
-    height: 15px;
-    width: 15px;
-    float: right;
-}
+    .sidebar{
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 5px;
 
-.main_menu{
-    border-radius: 5px;
-
-    .product_menu{
-        list-style: none;
-        font-size: 0;
-        padding: 30px 10px;
-
-        .menu_items{
+        &__title{
+            color: $color-white;
             display: block;
-            width: 100%;
-            font-size: 20px;
-            border-radius: 5px; 
-
-        &:hover{
-            background-color: #B30737;
-            transition: 0.3s;
+            height: 40px;
+            border-bottom: solid 1px $color-white;
+            font-size: 1.2em;
         }
+    }
 
-        &:hover .sub_menu{
-            display: block;
-        }
+    .down_arrow{
+        height: 15px;
+        width: 15px;
+        float: right;
+    }
 
-            .items{
-                text-decoration: none;
-                font-size: 1em;
-                color: $color-white;
-                padding-top: 20px;
-                padding: 15px;
+    .panel{
+        border-radius: 5px;
+
+        &__menu{
+            list-style: none;
+            font-size: 0;
+            padding: 30px 10px;
+
+            &--items{
                 display: block;
-                border-radius: 5px;
-                cursor: pointer;
+                width: 100%;
+                font-size: 20px;
+                border-radius: 5px; 
+
+            &:hover{
+                background-color: #B30737;
+                transition: 0.3s;
             }
-        }
 
-        .sub_menu{
-            display: none;
-            padding: 5px 0px;
-            margin: 0px 5px;
-
-            &_items{
+            &:hover .submenu{
                 display: block;
+            }
 
-                .sub_items{
+                .items{
                     text-decoration: none;
-                    color: $color-silver;
-                    padding: 10px 0px;
+                    font-size: 1em;
+                    color: $color-white;
+                    padding-top: 20px;
+                    padding: 15px;
                     display: block;
                     border-radius: 5px;
-                    font-size: 14px;
-                }
-                
-                .sub_items:hover{
-                    background-color: #911235;
-                    transition: 0.3s;
-                    color: $color-white;
                     cursor: pointer;
                 }
             }
+
+            .submenu{
+                display: none;
+                padding: 5px 0px;
+                margin: 0px 5px;
+
+                &__items{
+                    display: block;
+
+                    .sub-items{
+                        text-decoration: none;
+                        color: $color-silver;
+                        padding: 10px 0px;
+                        display: block;
+                        border-radius: 5px;
+                        font-size: 14px;
+                    }
+                    
+                    .sub-items:hover{
+                        background-color: #911235;
+                        transition: 0.3s;
+                        color: $color-white;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
-}
+
+    .fcard{
+        @extend .card;
+
+        &__container img{
+            @extend .img;
+        }
+
+        &__description{
+            margin: 20px;
+        }
+
+        &__title{
+            @extend .title;
+            margin: 20px 0px;
+        }
+
+        &__price{
+            @extend .title;
+        }
+    }
 /* FIN MAIN PRODUCTOS */
+
 
 
 
