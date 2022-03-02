@@ -458,7 +458,8 @@ header {
     text-align: center; }
     header .navbar_container .navbar_link {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      margin: 0 20px; }
       header .navbar_container .navbar_link a {
         text-align: center;
         text-decoration: none;
@@ -548,7 +549,8 @@ header {
     text-align: center; }
     #header_secondary .navbar_container .navbar_link {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      margin: 0 20px; }
       #header_secondary .navbar_container .navbar_link a {
         text-align: center;
         text-decoration: none;
@@ -987,8 +989,6 @@ footer {
         width: 200px; }
       header .navbar_main .navbar_container {
         width: 100%;
-        margin: 0 20px; }
-      header .navbar_main .navbar_link a {
         margin: 0 20px; }
       header .navbar_main .navbar_container_icon {
         width: 50%; }
