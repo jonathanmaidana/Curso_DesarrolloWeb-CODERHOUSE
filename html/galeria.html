@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="productos gamer, venta de accesorios para pc gamer, venta pc gaming argentina, pc gamer"
+    <meta name="keywords" content="productos gamer, venta de accesorios para pc gamer, venta pc gaming argentina, pc gamer">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- iconos-->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Animacion -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Gaming Zone - Galeria</title>
     <meta name="description" content="Visita nuestro local, desde la galeria tenes imagenes de nuestro local por dentro">
 </head>
 <body>
-    <header>
+    <header id="header_secondary">
         <section class="navbar_main">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -40,55 +40,98 @@
                             </ul>
                         </div>
                         <div class="navbar_container_icon">
-                            <a href="">
-                                <img src="../img/icon-cart.png" alt="Ir al carrito" class="navbar-icon">
-                            </a>
-                            <a href="">
-                                <img src="../img/icon-user.png" alt="Ingresar" class="navbar-icon">
-                            </a>
+                            <button>
+                                <i class="navbar-icon fa-solid fa-cart-shopping" alt="Carrtio"></i>
+                            </button>
+                            <button>
+                                <i class="navbar-icon fa-solid fa-user" alt="Ingresar"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </nav>
         </section>
-
-        <div class="header_title">
-            <h1>Galeria</h1>
-            <p>Almacenamiento de productos</p>
-        </div>
-
-        <button class="header_button_down animate__animated animate__shakeY"">
-            <h1>Bajar</h1>
-        </button>
     </header>
 
-
-
     <main id="main_galeria">
-        <section>
-            <h2 class="gallery_title">Galeria</h2>
-            
-                <div class="gallery_container">
-                    <img src="../img/Almacen1.jpg" alt="Estante con componentes de pc" class="img_gallery1">
-                    <img src="../img/Almacen2.jpg" alt="Estante con componentes de pc" class="img_gallery2">
-                    <img src="../img/Almacen3.jpg" alt="Estante con componentes de pc" class="img_gallery3">
-                    <img src="../img/cpu1.jpg" alt="CPU" class="img_gallery4">
-                    <img src="../img/cpu2.jpg" alt="CPU" class="img_gallery5">
-                    <img src="../img/Setup2.jpg" alt="Setup de pc" class="img_gallery6">
-                    <img src="../img/Setup3.jpg" alt="Setup de pc" class="img_gallery7">
+        <div class="banner__lg">
+            <div id="carouselExampleIndicators" class="carousel slide banner__lg--card" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-        </section>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../img/bannerlg-1.jpg" class="d-block w-100" alt="Motherboard-img">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/bannerlg-2.jpg" class="d-block w-100" alt="Motherboard-img">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/bannerlg-4.jpg" class="d-block w-100" alt="Motherboard-img">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-        <div class="sponsor">
-            <div class="sponsor__container">
-                <img src="../img/hyper-x-logo.png" alt="HyperX" class="sponsor-img">
-                <img src="../img/kingston-logo.png" alt="Kingston" class="sponsor-img">
-                <img src="../img/asus-logo.png" alt="ASUS" class="sponsor-img">
-                <img src="../img/amd-logo.png" alt="AMD" class="sponsor-img">
+            <div class="banner__lg--description">
+                <div>
+                    <h2 class="animate__animated animate__fadeInUp">Since 2005</h2>
+
+                    <p class="animate__animated animate__fadeInUp">Nuestra empresa nacio en el año 2005 como un pequeño local que fue creciendo y mejorando con el pasar del tiempo.
+                        Los primeros años nos dedicabamos solamente a la venta de productos de gama baja (auriculares, mouses, impresoras, etc.).
+                        Pasando los años fuimos mejorando nuestras marcas y añadiendo mayor variedad de productos y stock, hasta el dia de hoy seguimos creciendo y mejorando
+                        para ser los mejores en la venta de componentes electronicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="banner__sm">
+                <div class="banner__sm--card">
+                    <div class="banner__sm--img">
+                        <a href="" class="img_gallery">
+                            <img src="../img/hyper-x-logo.png" alt="Hyperx" >
+                        </a>
+                        <a href="" class="img_gallery">
+                            <img src="../img/kingston-logo.png" alt="Kingston" >
+                        </a>
+                        <a href="" class="img_gallery">
+                            <img src="../img/amd-logo.png" alt="AMD" >
+                        </a>
+                        <a href="" class="img_gallery">
+                            <img src="../img/asus-logo.png" alt="ASUS">
+                        </a>
+                        <a href="" class="img_gallery">
+                            <img src="../img/corsair-logo.png" alt="Corsair" >
+                        </a>
+                        <a href="" class="img_gallery">
+                            <img src="../img/aorus-logo.png" alt="Aourus" >
+                        </a>
+                    </div>
+                </div>
+
+                <div class="banner__sm--description">
+                    <div>
+                        <h2 class="animate__animated animate__fadeInUp">Marcas que nos acompañan</h2>
+                        <p class="animate__animated animate__fadeInUp">Estamos muy contentos de contar con el respaldo de las mejores marcas.
+                            Para poder tener los mejores productos del mercado en nuestro almacen.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
 
 
     <footer>
@@ -99,25 +142,34 @@
                 <ul class="footer__about--nav">
                     <li class="about_item">
                         <i class="fa fa-phone"></i>
-                        XXXX-XXXX
+                        (011)2787-9836
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="link-item">
                             <i class="fab fa-whatsapp"></i>
-                            WhatsApp: XXXXXXXX</a>
+                            WhatsApp: XXXXXXXX
+                        </a>
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
-                            <i class="fa fa-at"></i>
-                            Email: @gmail.com</a>
+                        <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: gamerzone@gmail.com
+                        </a>
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <a href="https://www.google.com/maps/place/Av.+Santa+Fe+1753,+C1060+ABD,+Buenos+Aires/@-34.5991124,-58.3960411,16z/data=!4m5!3m4!1s0x95bccabe763c0a2b:0xa022fcce7186bd10!8m2!3d-34.5957109!4d-58.3926168" target="_blank" rel="noopener noreferrer" class="link-item">
                             <i class="fa fa-map-marker-alt"></i>
-                            Ubicacion:</a>
+                            Ubicacion: Av. Santa Fe 1753, Buenos Aires.
+                        </a>
+                    </li>
+
+                    <li class="about_item">
+                        <p>
+                            Lunes a Viernes de 9:00 a 19:00hs. Sábados de 10:00 a 13:30hs
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -126,21 +178,21 @@
                 <p class="footer__social--title">REDES</p>
 
                 <ul class="footer__social--icon">
-                    <li class="social-icon">
+                    <li class="social-icon twitter">
                         <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="../img/twitter.png" alt="Ir a Twitter">
+                            <i class="fa-brands fa-twitter" alt="Ir a Twitter"></i>
                         </a>
                     </li>
 
-                    <li class="social-icon">
+                    <li class="social-icon facebook">
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="../img/facebook.png" alt="Ir a Facebook">
+                            <i class="fa-brands fa-facebook-f" alt="Ir a Facebook"></i>
                         </a>   
                     </li>
 
-                    <li class="social-icon">
+                    <li class="social-icon instagram">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="../img/instagram.png" alt="Ir a Instagram">
+                            <i class="fa-brands fa-instagram" alt="Ir a Instagram"></i>
                         </a>
                     </li>
                 </ul>
@@ -151,5 +203,11 @@
             <p>Pagina Web by Jonathan Maidana</p>
         </div> 
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

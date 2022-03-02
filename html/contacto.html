@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="productos gamer, venta de accesorios para pc gamer, venta pc gaming argentina, pc gamer"
+    <meta name="keywords" content="productos gamer, venta de accesorios para pc gamer, venta pc gaming argentina, pc gamer">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- iconos-->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -38,12 +37,12 @@
                             </ul>
                         </div>
                         <div class="navbar_container_icon">
-                            <a href="">
-                                <img src="../img/icon-cart.png" alt="Ir al carrito" class="navbar-icon">
-                            </a>
-                            <a href="">
-                                <img src="../img/icon-user.png" alt="Ingresar" class="navbar-icon">
-                            </a>
+                            <button>
+                                <i class="navbar-icon fa-solid fa-cart-shopping" alt="Carrtio"></i>
+                            </button>
+                            <button>
+                                <i class="navbar-icon fa-solid fa-user" alt="Ingresar"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -55,34 +54,24 @@
 
     <main id="main_contacto">
         <section class="form_container">
-            <h1 class="contact_title">Contacto</h1>
             <article class="form">
                 <form action="">
                     <label for="nombreApellido" class="form-label">Nombre y apellido</label>
-                    <input type="text" class="form-input" id="nombreApellido" placeholder="Escriba su nombre">
+                    <input type="text" required class="form-input" id="nombreApellido" placeholder="Escriba su nombre">
 
                     <label for="email" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-input" name="" id="email" placeholder="Escriba su email">
+                    <input type="email" required class="form-input" name="" id="email" placeholder="Escriba su email">
 
                     <label for="telefono" class="form-label">Numero de Telefono</label>
-                    <input type="tel" class="form-input" name="" id="telefono" placeholder="Escriba su numero">
+                    <input type="tel" class="form-input" required name="" id="telefono" placeholder="Escriba su numero">
 
                     <label for="consulta" class="form-label">Consulta</label>
-                    <textarea name="" id="consulta" class="form-input" cols="30" rows="10" placeholder="Consultanos"></textarea>
+                    <textarea name="" id="consulta" class="form-input" required cols="30" rows="10" placeholder="Consultanos"></textarea>
 
                     <input type="submit" value="Enviar Consulta" class="send">
                 </form>
             </article>
         </section>
-
-        <div class="sponsor">
-            <div class="sponsor__container">
-                <img src="../img/hyper-x-logo.png" alt="HyperX" class="sponsor-img">
-                <img src="../img/kingston-logo.png" alt="Kingston" class="sponsor-img">
-                <img src="../img/asus-logo.png" alt="ASUS" class="sponsor-img">
-                <img src="../img/amd-logo.png" alt="AMD" class="sponsor-img">
-            </div>
-        </div>
     </main>    
 
 
@@ -95,25 +84,34 @@
                 <ul class="footer__about--nav">
                     <li class="about_item">
                         <i class="fa fa-phone"></i>
-                        XXXX-XXXX
+                        (011)2787-9836
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="link-item">
                             <i class="fab fa-whatsapp"></i>
-                            WhatsApp: XXXXXXXX</a>
+                            WhatsApp: XXXXXXXX
+                        </a>
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
-                            <i class="fa fa-at"></i>
-                            Email: @gmail.com</a>
+                        <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: gamerzone@gmail.com
+                        </a>
                     </li>
 
                     <li class="about_item">
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="link-item">
+                        <a href="https://www.google.com/maps/place/Av.+Santa+Fe+1753,+C1060+ABD,+Buenos+Aires/@-34.5991124,-58.3960411,16z/data=!4m5!3m4!1s0x95bccabe763c0a2b:0xa022fcce7186bd10!8m2!3d-34.5957109!4d-58.3926168" target="_blank" rel="noopener noreferrer" class="link-item">
                             <i class="fa fa-map-marker-alt"></i>
-                            Ubicacion:</a>
+                            Ubicacion: Av. Santa Fe 1753, Buenos Aires.
+                        </a>
+                    </li>
+
+                    <li class="about_item">
+                        <p>
+                            Lunes a Viernes de 9:00 a 19:00hs. Sábados de 10:00 a 13:30hs
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -122,21 +120,21 @@
                 <p class="footer__social--title">REDES</p>
 
                 <ul class="footer__social--icon">
-                    <li class="social-icon">
+                    <li class="social-icon twitter">
                         <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="../img/twitter.png" alt="Ir a Twitter">
+                            <i class="fa-brands fa-twitter" alt="Ir a Twitter"></i>
                         </a>
                     </li>
 
-                    <li class="social-icon">
+                    <li class="social-icon facebook">
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="../img/facebook.png" alt="Ir a Facebook">
+                            <i class="fa-brands fa-facebook-f" alt="Ir a Facebook"></i>
                         </a>   
                     </li>
 
-                    <li class="social-icon">
+                    <li class="social-icon instagram">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="../img/instagram.png" alt="Ir a Instagram">
+                            <i class="fa-brands fa-instagram" alt="Ir a Instagram"></i>
                         </a>
                     </li>
                 </ul>
