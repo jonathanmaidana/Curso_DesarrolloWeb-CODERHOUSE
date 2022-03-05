@@ -7,7 +7,7 @@
 /*VARIABLES*/
 /*MIXIN*/
 /*EXTEND*/
-.hr, footer .hr2 {
+.hr, #main_usuario .login hr, footer .hr2 {
   width: 100%;
   border: 0;
   height: 0;
@@ -149,15 +149,19 @@
       margin: 0px 20px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 30px;
       padding: 20px; }
-      #main_productos .col-md-9 .contenido .fcard__description {
-        margin: 20px; }
-      #main_productos .col-md-9 .contenido .fcard__title {
-        margin: 20px 0px;
-        color: #3C4858; }
-      #main_productos .col-md-9 .contenido .fcard__price {
-        font-weight: bold; }
+      #main_productos .col-md-9 .contenido .fcard {
+        transition: .5s ease; }
+        #main_productos .col-md-9 .contenido .fcard:hover {
+          box-shadow: 0px 0px 20px black; }
+        #main_productos .col-md-9 .contenido .fcard__description {
+          margin: 20px; }
+        #main_productos .col-md-9 .contenido .fcard__title {
+          margin: 20px 0px;
+          color: #3C4858; }
+        #main_productos .col-md-9 .contenido .fcard__price {
+          font-weight: bold; }
 
 /* FIN MAIN PRODUCTOS */
 /* MAIN GALERIA */
@@ -270,22 +274,24 @@
     height: 100%;
     margin: 100px 0; }
     #main_nosotros .group_profile .profile {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #202020;
       border-radius: 5px;
       padding: 20px;
-      box-shadow: 10px 10px 15px -8px silver;
       transition: 0.5s ease; }
       #main_nosotros .group_profile .profile:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 0px 0px 15px silver; }
       #main_nosotros .group_profile .profile__avatar {
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: center; }
         #main_nosotros .group_profile .profile__avatar img {
+          width: 100%;
           height: 100%;
           border: 2px solid white;
           border-radius: 50%; }
@@ -334,7 +340,6 @@
     list-style: none;
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0; }
     .profile__body .profile__social--icon {
@@ -378,21 +383,18 @@
     flex-direction: column;
     margin: 100px; }
 
-.form {
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+.contact {
   background-color: #202020;
   margin: auto;
   border-radius: 10px;
   padding: 20px;
   color: #ffffff; }
-  .form-label {
+  .contact-label {
     font-size: 20px;
     display: block;
     padding-top: 15px;
     margin: 10px 0px; }
-  .form-input {
+  .contact-input {
     color: #ffffff;
     width: 70%;
     border-radius: 5px;
@@ -400,16 +402,16 @@
     background-color: black;
     border: solid 1px #c0c0c0;
     transition: all 0.4s ease; }
-  .form-input:hover {
+  .contact-input:hover {
     border: solid 1px #ffffff; }
-  .form-input:focus {
+  .contact-input:focus {
     border-color: #F60144;
-    box-shadow: 0 1px 1px #ed0202af;
+    box-shadow: 0 1px 1px #F60144;
     outline: none; }
-  .form textarea {
+  .contact textarea {
     width: 100%;
     height: 100%; }
-  .form .send, .form #main_productos .col-md-9 .contenido .fcard__send, #main_productos .col-md-9 .contenido .form .fcard__send {
+  .contact .send, .contact #main_productos .col-md-9 .contenido .fcard__send, #main_productos .col-md-9 .contenido .contact .fcard__send {
     margin: 10px 0px;
     font-size: 20px;
     width: 100%;
@@ -420,11 +422,115 @@
     cursor: pointer;
     transition: 0.3s ease;
     border-radius: 5px; }
-  .form .send:hover, .form #main_productos .col-md-9 .contenido .fcard__send:hover, #main_productos .col-md-9 .contenido .form .fcard__send:hover {
+  .contact .send:hover, .contact #main_productos .col-md-9 .contenido .fcard__send:hover, #main_productos .col-md-9 .contenido .contact .fcard__send:hover {
     color: white;
     border: 1px solid white; }
 
 /* FIN MAIN CONTACTO */
+#main_usuario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: url(../img/fondo-usuario1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  #main_usuario .login {
+    background-color: #ffffff;
+    width: 30%;
+    height: auto;
+    padding: 10em 5em;
+    text-align: left;
+    font-weight: 500;
+    border-radius: 2em; }
+    #main_usuario .login .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      #main_usuario .login .logo img {
+        width: 100%; }
+    #main_usuario .login__title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: calc(0.7vh + 1em); }
+    #main_usuario .login form {
+      margin: 20px 0; }
+    #main_usuario .login__container--user {
+      margin: 20px 0; }
+      #main_usuario .login__container--user .login-label {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+        text-align: left; }
+      #main_usuario .login__container--user .login-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid silver;
+        border-radius: 5px; }
+        #main_usuario .login__container--user .login-input:hover {
+          border: 1px solid black;
+          transition: .5s ease; }
+        #main_usuario .login__container--user .login-input:focus {
+          border: 1px solid #F60144;
+          box-shadow: 0 0px 5px #F60144;
+          outline: none;
+          transition: none; }
+    #main_usuario .login .login-question {
+      text-decoration: none;
+      font-size: 0.9em;
+      float: right;
+      color: #F60144; }
+      #main_usuario .login .login-question:hover {
+        opacity: .7; }
+    #main_usuario .login .button_sing-in {
+      width: 100%;
+      height: 50px;
+      margin: 20px 0;
+      font-size: 1em;
+      color: #ffffff;
+      background-color: #FF005F;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.1s ease; }
+      #main_usuario .login .button_sing-in:hover {
+        filter: grayscale(0.1); }
+    #main_usuario .login .registrar {
+      text-align: center; }
+      #main_usuario .login .registrar p {
+        font-size: .8em;
+        font-weight: 600; }
+        #main_usuario .login .registrar p a {
+          text-decoration: none;
+          color: #FF005F;
+          margin: 0 5px; }
+    #main_usuario .login hr {
+      margin: 20px 0; }
+    #main_usuario .login__container--social {
+      margin: 30px 0; }
+      #main_usuario .login__container--social .login-social {
+        text-decoration: none;
+        color: black;
+        font-weight: 600; }
+        #main_usuario .login__container--social .login-social div {
+          width: 100%;
+          margin: 20px 0;
+          padding: 20px;
+          border-radius: 10px;
+          border: 1px solid silver;
+          text-align: center;
+          transition: .2s ease-out; }
+          #main_usuario .login__container--social .login-social div:hover {
+            border: 1px solid black; }
+        #main_usuario .login__container--social .login-social .icon-login-g {
+          float: left;
+          color: #de5246; }
+        #main_usuario .login__container--social .login-social .icon-login-f {
+          float: left;
+          color: #3b5999; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-repeat: no-repeat;
@@ -433,8 +539,8 @@ body {
   background-size: cover;
   background: #000000; }
 
-/* HEADER */
-/* Logo y nav*/
+/******************************** HEADER ********************************/
+/******************************** Logo y nav ********************************/
 header {
   background-image: url(../img/Fondo-nvidia-optimizada.jpg);
   background-repeat: no-repeat;
@@ -447,11 +553,12 @@ header {
   height: 100vh;
   width: 100%;
   padding-bottom: 1rem;
-  /* Boton menu de hamburgesas */ }
+  /******************************** Boton menu de hamburgesas ********************************/ }
   header .navbar_main {
     width: 100%;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.472); }
     header .navbar_main .navbar {
       padding: 0; }
   header .navbar_container {
@@ -481,17 +588,19 @@ header {
         width: 100%; }
   header .navbar_container_icon {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    header .navbar_container_icon button {
-      background-color: transparent;
-      border: none;
-      color: white;
-      transition: all 0.5s ease; }
-    header .navbar_container_icon button:hover {
-      color: black;
-      transition: .3s ease-in-out;
-      background-color: #F60144; }
+    width: 100%; }
+    header .navbar_container_icon a {
+      margin: 0;
+      width: 100%; }
+      header .navbar_container_icon a button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        transition: all 0.5s ease; }
+      header .navbar_container_icon a button:hover {
+        color: black;
+        transition: .3s ease-in-out;
+        background-color: #F60144; }
   header .header_title {
     height: 60vh;
     display: flex;
@@ -510,7 +619,11 @@ header {
     border-radius: 3rem;
     height: 3rem;
     width: 10rem;
+    font-size: 1rem;
     background-color: #F60144;
+    color: white;
+    font-weight: bold;
+    text-align: center;
     border: none;
     display: flex;
     justify-content: center;
@@ -519,12 +632,6 @@ header {
     transition: all 0.5s ease; }
     header .header_button_down:hover {
       background-color: black; }
-    header .header_button_down h1 {
-      font-size: 1rem;
-      color: #ffffff;
-      font-weight: bold;
-      text-align: center;
-      margin: 0; }
   header .navbar-light .navbar-toggler {
     border: 1px solid silver;
     color: transparent; }
@@ -533,11 +640,12 @@ header {
   header .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28170, 161, 161, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
+/******************************** HEADER SECONDARY ********************************/
 #header_secondary {
   width: 100%;
   height: auto;
   background-image: none;
-  background: linear-gradient(to bottom, #1a19198f, #2121214f);
+  background: rgba(0, 0, 0, 0.472);
   padding: 0; }
   #header_secondary .navbar_main {
     width: 100%;
@@ -584,15 +692,15 @@ header {
       transition: .3s ease-in-out;
       background-color: #F60144; }
 
-/* Fin logo y nav */
-/* Sponsors */
+/******************************** Fin logo y nav ********************************/
+/******************************** Sponsors ********************************/
 .sponsor {
   width: 100%;
   height: 50px;
   display: flex;
   background-color: #ffffff;
   padding: 40px 0px;
-  /* Boton menu de hamburgesas */ }
+  /******************************** BOTON MENU DE HAMBURGESAS ********************************/ }
   .sponsor__container {
     width: 100%;
     display: flex;
@@ -616,11 +724,12 @@ header {
   .sponsor .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28170, 161, 161, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
-/* FOOTER */
+/******************************** FOOTER ********************************/
 footer {
   height: auto;
   background-color: black;
-  border-top: 1px solid; }
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  /******************************** FOOTER END ********************************/ }
   footer #footer__container {
     width: 100%;
     height: 100%;
@@ -629,8 +738,8 @@ footer {
     align-items: start;
     padding: 0px 100px;
     line-height: 1.5rem;
-    /* Informacion de nosotros */
-    /* Redes sociales */ }
+    /******************************** Informacion de nosotros ********************************/
+    /******************************** Redes sociales ********************************/ }
     footer #footer__container .footer__about {
       width: 100%;
       height: 100%;
@@ -742,8 +851,8 @@ footer {
       font-size: 14px;
       font-weight: 400; }
 
-/* FIN FOOTER */
-/* MOBILE */
+/******************************** FIN FOOTER ********************************/
+/******************************** MOBILE ********************************/
 @media only screen and (max-width: 576px) {
   /* Logo y nav */
   header .navbar_main {
@@ -757,16 +866,18 @@ footer {
   header .navbar_container_icon {
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 100%;
+    height: 100%;
     margin-top: 10px; }
     header .navbar_container_icon button {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      padding: 15px; }
   header .header_title {
     height: 30vh; }
     header .header_title h1 {
       font-size: 4em; }
+  /******************************** HEADER SECONDARY ********************************/
+  /* Logo y nav */
   #header_secondary .navbar_main {
     flex-direction: column;
     width: 100%; }
@@ -776,6 +887,15 @@ footer {
   #header_secondary .navbar_container .navbar_link {
     margin: 10px 0; }
   /* Fin logo y nav */
+  /* MAIN USUARIO */
+  #main_usuario {
+    background-image: none; }
+    #main_usuario .login {
+      width: 100%;
+      padding: 10px; }
+      #main_usuario .login .logo img {
+        width: 60%; }
+  /*FIN MAIN USUARIO*/
   /* MAIN INICIO */
   #main_inicio .product {
     margin: 100px 0; }
@@ -807,8 +927,7 @@ footer {
           height: auto;
           width: 80%; }
           #main_productos .col-md-9 .contenido .fcard .fcard__container {
-            width: 100%;
-            height: auto; }
+            width: 100%; }
             #main_productos .col-md-9 .contenido .fcard .fcard__container img {
               width: 50%;
               height: auto; }
@@ -872,8 +991,11 @@ footer {
   .sponsor-img {
     width: 14%; }
   /* FOOTER */
-  #footer__container {
+  footer #footer__container {
     flex-direction: column; }
+    footer #footer__container .footer__social--icon {
+      width: auto;
+      flex-wrap: nowrap; }
   /* FIN FOOTER */ }
 
 /* TABLET */
@@ -899,8 +1021,15 @@ footer {
         width: 20px;
         height: 20px; }
   /* Fin logo y nav */
-  /* MAIN INICIO */
-  /* FIN MAIN INICIO */
+  /* MAIN USUARIO */
+  #main_usuario {
+    padding: 100px; }
+    #main_usuario .login {
+      width: 100%;
+      padding: 0 20px; }
+      #main_usuario .login .logo img {
+        width: 60%; }
+  /* FIN MAIN USUARIO*/
   /* MAIN PRODUCTOS */
   #main_productos {
     margin: 100px auto;
@@ -995,8 +1124,19 @@ footer {
     header .header_title h1 {
       font-size: 5em; }
   /* Fin logo y nav */
-  /* MAIN INICIO */
-  /* FIN MAIN INICIO */
+  /* MAIN USUARIO */
+  #main_usuario {
+    padding: 5em; }
+    #main_usuario .login {
+      width: 30%;
+      padding: 0 30px; }
+      #main_usuario .login .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        #main_usuario .login .logo img {
+          width: 80%; }
+  /*FIN MAIN USUARIO*/
   /* MAIN PRODUCTOS */
   #main_productos {
     margin: 100px auto;
@@ -1045,13 +1185,17 @@ footer {
           padding: 0;
           margin: 20px;
           width: 100%; }
-        #main_nosotros .group_profile .profile__avatar img {
+        #main_nosotros .group_profile .profile__avatar {
           width: 100%;
+          height: 100%; }
+        #main_nosotros .group_profile .profile img {
+          width: 50%;
           height: 100%; }
         #main_nosotros .group_profile .profile__body--biography h3 {
           font-size: 1.2em; }
         #main_nosotros .group_profile .profile__body--biography p {
-          font-size: 1em; }
+          font-size: 1em;
+          margin: 20px; }
   /* FIN MAIN NOSOTROS */
   /* MAIN CONTACTO */
   #main_contacto {

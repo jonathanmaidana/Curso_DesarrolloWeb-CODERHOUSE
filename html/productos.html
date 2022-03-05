@@ -37,12 +37,16 @@
                             </ul>
                         </div>
                         <div class="navbar_container_icon">
-                            <button>
-                                <i class="navbar-icon fa-solid fa-cart-shopping" alt="Carrtio"></i>
-                            </button>
-                            <button>
-                                <i class="navbar-icon fa-solid fa-user" alt="Ingresar"></i>
-                            </button>
+                            <a href="#">
+                                <button>
+                                    <i class="navbar-icon fa-solid fa-cart-shopping" alt="Carrtio"></i>
+                                </button>
+                            </a>
+                            <a href="usuario.html">
+                                <button>
+                                        <i class="navbar-icon fa-solid fa-user" alt="Ingresar"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -51,390 +55,235 @@
     </header>
 
 
-    
-    <!-- <main id="main_productos">
-        <div class="sidebar">
-            <span class="sidebar__title">PRODUCTOS</span>
-            
-            <div class="panel">
-                <ul class="panel__menu">
-                    <li class="panel__menu--items">
-                        <span class="items">Procesadores
-                            <img src="../img/icon-down-arrow.png" alt="" class="down_arrow">
-                        </span>
-                        <ul class="submenu">
-                            <li class="submenu__items">
-                                <span class="sub-items">- Procesadores INTEL</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Procesadores AMD</span>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="panel__menu--items">
-                        <span class="items">Motherboards
-                            <img src="../img/icon-down-arrow.png" alt="" class="down_arrow">
-                        </span>
-                        <ul class="submenu">
-                            <li class="submenu__items">
-                                <span class="sub-items">- Mothers INTEL</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Mothers AMD</span>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="panel__menu--items">
-                        <span class="items">Monitores</span>
-                    </li>
-                    
-                    <li class="panel__menu--items">
-                        <span class="items">Almacenamiento
-                            <img src="../img/icon-down-arrow.png" alt="" class="down_arrow">
-                        </span>
-                        <ul class="submenu">
-                            <li class="submenu__items">
-                                <span class="sub-items">- Discos Externos</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Discos Solidos SSD</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Discos Duros</span>
-                        </ul>
-                    </li>
-
-                    <li class="panel__menu--items">
-                        <span class="items">Perifericos
-                            <img src="../img/icon-down-arrow.png" alt="" class="down_arrow">
-                        </span>
-                        <ul class="submenu">
-                            <li class="submenu__items">
-                                <span class="sub-items">- Mouses</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Teclados</span>
-                            </li>
-                            <li class="submenu__items">
-                                <span class="sub-items">- Auriculares</span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </main> -->
-
     <main id="main_productos" class="container">
         <div class="col-md-3">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  - Procesadores
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                <div class="accordion-body sub-item">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        - Procesadores
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body sub-item">
+                            <div>
+                                <span>- Procesadores INTEL</span>
+                            </div>
+                            <div>
+                                <span>- Procesadores AMD</span>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        - Motherboard
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body sub-item">
                         <div>
-                            <span>- Procesadores INTEL</span>
+                            <span>- Motherboards INTEL</span>
                         </div>
                         <div>
-                            <span>- Procesadores AMD</span>
-                        </div>                
+                            <span>- Motherboards AMD</span>
+                        </div>  
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        - Monitores
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body sub-item">
+                            <div>
+                                <span>- LG</span>
+                            </div>
+                            <div>
+                                <span>- Samsung</span>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        - Almacenamiento
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body sub-item">
+                            <div>
+                                <span>- Discos Externos</span>
+                            </div>
+                            <div>
+                                <span>- Discos Solidos SSD</span>
+                            </div>   
+                            <div>
+                                <span>- Discos Duros</span>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="Five">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        - Perifericos
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                        <div class="accordion-body sub-item">
+                            <div>
+                                <span>- Mouses</span>
+                            </div>
+                            <div>
+                                <span>- Teclados</span>
+                            </div>
+                            <div>
+                                <span>- Auriculares</span>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  - Motherboard
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                <div class="accordion-body sub-item">
-                    <div>
-                        <span>- Motherboards INTEL</span>
-                    </div>
-                    <div>
-                        <span>- Motherboards AMD</span>
-                    </div>  
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    - Monitores
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                  <div class="accordion-body sub-item">
-                    <div>
-                        <span>- LG</span>
-                    </div>
-                    <div>
-                        <span>- Samsung</span>
-                    </div>                    
-                </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    - Almacenamiento
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                  <div class="accordion-body sub-item">
-                    <div>
-                        <span>- Discos Externos</span>
-                    </div>
-                    <div>
-                        <span>- Discos Solidos SSD</span>
-                    </div>   
-                    <div>
-                        <span>- Discos Duros</span>
-                    </div>                   
-                </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="Five">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    - Perifericos
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                  <div class="accordion-body sub-item">
-                    <div>
-                        <span>- Mouses</span>
-                    </div>
-                    <div>
-                        <span>- Teclados</span>
-                    </div>
-                    <div>
-                        <span>- Auriculares</span>
-                    </div>                       
-                </div>
-                </div>
-              </div>
-          </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-3">
-                <div class="sidebar">
-                    <span class="sidebar__title">PRODUCTOS</span>
-                    
-                    <div class="panel">
-                        <ul class="panel__menu">
-                            <li class="panel__menu--items dropdown">
-                                <span class="items" id="dropdownMenuButton1">Procesadores
-                                    <i class="fa-solid fa-angle-down down_arrow"></i>
-                                </span>
-                                <ul class="submenu">
-                                    <li class="submenu__items">
-                                        <a class="sub-items">- Procesadores INTEL</a>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <a class="sub-items">- Procesadores AMD</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            
-                            <li class="panel__menu--items">
-                                <span class="items">Motherboards
-                                    <i class="fa-solid fa-angle-down down_arrow"></i>
-                                </span>
-                                <ul class="submenu">
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Mothers INTEL</span>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Mothers AMD</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            
-                            <li class="panel__menu--items">
-                                <span class="items">Monitores</span>
-                            </li>
-                            
-                            <li class="panel__menu--items">
-                                <span class="items">Almacenamiento
-                                    <i class="fa-solid fa-angle-down down_arrow"></i>
-                                </span>
-                                <ul class="submenu">
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Discos Externos</span>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Discos Solidos SSD</span>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Discos Duros</span>
-                                </ul>
-                            </li>
-        
-                            <li class="panel__menu--items">
-                                <span class="items">Perifericos
-                                    <i class="fa-solid fa-angle-down down_arrow"></i>
-                                </span>
-                                <ul class="submenu">
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Mouses</span>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Teclados</span>
-                                    </li>
-                                    <li class="submenu__items">
-                                        <span class="sub-items">- Auriculares</span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+
+        <div class="col-md-9">
+            <div class="contenido">
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador AMD Ryzen 7 5700G.jpg" alt="Procesador AMD Ryzen 7 5700G">
+                    </div>
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador AMD Ryzen 7 5700G</h3>
+                        <p class="fcard__price">$48,600</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
+                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
                     </div>
                 </div>
-            </div> -->
 
-            <div class="col-md-9">
-                <div class="contenido">
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador AMD Ryzen 7 5700G.jpg" alt="Procesador AMD Ryzen 7 5700G">
-                        </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador AMD Ryzen 7 5700G</h3>
-                            <p class="fcard__price">$48,600</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador gamer AMD Ryzen 5 3600.jpg" alt="Procesador gamer AMD Ryzen 5 3600">
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador gamer AMD Ryzen 5 3600.jpg" alt="Procesador gamer AMD Ryzen 5 3600">
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador gamer AMD Ryzen 5 3600</h3>
+                        <p class="fcard__price">$32,399</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
                         </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador gamer AMD Ryzen 5 3600</h3>
-                            <p class="fcard__price">$32,399</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i
-                            </button>
-                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i
+                        </button>
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador gamer AMD Ryzen 5 5600X.jpg" alt="Procesador gamer AMD Ryzen 5 5600X">
-                        </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador gamer AMD Ryzen 5 5600X</h3>
-                            <p class="fcard__price">$40,999</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador gamer AMD Ryzen 5 5600X.jpg" alt="Procesador gamer AMD Ryzen 5 5600X">
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador gamer Intel Core i7-9700K.jpg" alt="Procesador gamer Intel Core i7-9700K">
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador gamer AMD Ryzen 5 5600X</h3>
+                        <p class="fcard__price">$40,999</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
                         </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador gamer Intel Core i7-9700K</h3>
-                            <p class="fcard__price">$42,374</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador Intel Core i3-10100F.jpg" alt="Procesador Intel Core i3-10100F">
-                        </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador Intel Core i3-10100F</h3>
-                            <p class="fcard__price">$13,690</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador gamer Intel Core i7-9700K.jpg" alt="Procesador gamer Intel Core i7-9700K">
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador Intel Core i3-9100.jpg" alt="Procesador Intel Core i3-9100">
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador gamer Intel Core i7-9700K</h3>
+                        <p class="fcard__price">$42,374</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
                         </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador Intel Core i3-9100</h3>
-                            <p class="fcard__price">$26,999</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador Intel Core I5 9400.jpg" alt="Procesador Intel Core I5 9400">
-                        </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador Intel Core I5 9400</h3>
-                            <p class="fcard__price">$27,452</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
-                        </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador Intel Core i3-10100F.jpg" alt="Procesador Intel Core i3-10100F">
                     </div>
-                    <div class="fcard">
-                        <div class="fcard__container">
-                            <img src="../img/Procesador Intel Core i5-10400F.jpg" alt="Procesador Intel Core i5-10400F">
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador Intel Core i3-10100F</h3>
+                        <p class="fcard__price">$13,690</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
                         </div>
-                        <div class="fcard__description">
-                            <h3 class="fcard__title">Procesador Intel Core i5-10400F</h3>
-                            <p class="fcard__price">$22,790.00</p>
-                            <div class="fcard__send">Envio Gratis                              
-                                <i class="fas fa-truck" title="Envio Gratis"></i> 
-                            </div>
-                            <button class="fcard__buy--btn">
-                                <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
-                            </button>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador Intel Core i3-9100.jpg" alt="Procesador Intel Core i3-9100">
+                    </div>
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador Intel Core i3-9100</h3>
+                        <p class="fcard__price">$26,999</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
                         </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador Intel Core I5 9400.jpg" alt="Procesador Intel Core I5 9400">
+                    </div>
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador Intel Core I5 9400</h3>
+                        <p class="fcard__price">$27,452</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
+                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fcard">
+                    <div class="fcard__container">
+                        <img src="../img/Procesador Intel Core i5-10400F.jpg" alt="Procesador Intel Core i5-10400F">
+                    </div>
+                    <div class="fcard__description">
+                        <h3 class="fcard__title">Procesador Intel Core i5-10400F</h3>
+                        <p class="fcard__price">$22,790.00</p>
+                        <div class="fcard__send">Envio Gratis                              
+                            <i class="fas fa-truck" title="Envio Gratis"></i> 
+                        </div>
+                        <button class="fcard__buy--btn">
+                            <i class=" fas fa-cart-arrow-down" alt="Agregar al carrito"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-
-    <div class="sponsor">
-        <div class="sponsor__container">
-            <img src="../img/hyper-x-logo.png" alt="HyperX" class="sponsor-img">
-            <img src="../img/kingston-logo.png" alt="Kingston" class="sponsor-img">
-            <img src="../img/asus-logo.png" alt="ASUS" class="sponsor-img">
-            <img src="../img/amd-logo.png" alt="AMD" class="sponsor-img">
-        </div>
-    </div>
 
 
 
@@ -452,7 +301,7 @@
                     <li class="about_item">
                         <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="link-item">
                             <i class="fab fa-whatsapp"></i>
-                            WhatsApp: XXXXXXXX
+                            WhatsApp: 11 5849-2102
                         </a>
                     </li>
 
