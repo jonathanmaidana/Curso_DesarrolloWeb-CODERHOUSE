@@ -370,6 +370,8 @@
 /* FIN MAIN NOSOTROS */
 /* MAIN CONTACTO */
 #main_contacto {
+  background-image: url(../img/Fondo-contacto.jpg);
+  background-size: cover;
   width: 100%;
   height: 100%;
   display: flex;
@@ -384,7 +386,7 @@
     margin: 100px; }
 
 .contact {
-  background-color: #202020;
+  background-color: #202020c4;
   margin: auto;
   border-radius: 10px;
   padding: 20px;
