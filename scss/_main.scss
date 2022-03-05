@@ -437,8 +437,9 @@
 
 /* MAIN CONTACTO */
 #main_contacto{
-    background-image: url(../img/Fondo-contacto.jpg);
+    background-image: url(../img/Fondo-contacto-optimizada.jpg);
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     @include posicion(flex, center, center, column);
