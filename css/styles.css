@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
 * {
   margin: 0;
@@ -439,7 +440,8 @@
   background-image: url(../img/fondo-usuario1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  /* INPUTS */ }
   #main_usuario .login {
     background-color: #ffffff;
     width: 30%;
@@ -447,7 +449,12 @@
     padding: 10em 5em;
     text-align: left;
     font-weight: 500;
-    border-radius: 2em; }
+    border-radius: 2em;
+    /* PREGUNTA ¿OLVIDO SU CONTRASEÑA? */
+    /* BOTON INICIAR SESIÓN */
+    /* PALABRA REGISTRAR */
+    /* LINEA DIVISORA */
+    /* BOTONES PARA INGRESAR CON OTRAS REDES */ }
     #main_usuario .login .logo {
       width: 100%;
       display: flex;
